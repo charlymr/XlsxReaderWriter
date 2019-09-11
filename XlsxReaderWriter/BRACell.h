@@ -62,6 +62,7 @@ typedef enum : NSUInteger {
 - (BOOL)boolValue;
 - (NSInteger)integerValue;
 - (float)floatValue;
+- (long long)longLongValue;
 - (NSString *)stringValue;
 - (NSAttributedString *)attributedStringValue;
 - (NSDate *)dateValue;

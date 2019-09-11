@@ -300,6 +300,16 @@
     return [[self stringValue] floatValue];
 }
 
+- (long long)longLongValue {
+    if (_type == BRACellContentTypeBoolean) {
+        return [_value boolValue];
+    } else if (_type == BRACellContentTypeNumber || _type == BRACellContentTypeUnknown) {
+        return [_value longLongValue];
+    }
+    
+    return [[self stringValue] longLongValue];
+}
+
 - (NSString *)stringValue {
     return [[self attributedStringValue] string];
 }
